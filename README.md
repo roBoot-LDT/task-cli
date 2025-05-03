@@ -22,31 +22,37 @@ A command-line task manager that stores tasks in JSON format. Perfect for person
    ```
 
 2. (Optional) Create virtual environment:
+    ```bash
     python -m venv venv
     source venv/bin/activate  # Linux/Mac
     venv\Scripts\activate     # Windows
-
+    ```
 ## Usage
 
 # Add a new task
+```bash
 task-cli add "Buy groceries"
-
+```
 # Update a task
+```bash
 task-cli update 1 "Buy groceries and cook dinner"
-
+```
 # Delete a task
+```bash
 task-cli delete 1
-
+```
 # Change task status
+```bash
 task-cli mark-in-progress 1
 task-cli mark-done 1
-
+```
 # List tasks
+```bash
 task-cli list
 task-cli list done
 task-cli list in-progress
 task-cli list todo
-
+```
 ## Data Structure
 
 Tasks are stored in data/tasks.json with this format:
